@@ -1,0 +1,113 @@
+h1 {
+    color: cadetblue;
+    font-size: 45px;
+    text-align: center;
+}
+h2 {
+    color: cadetblue;
+    text-align: center;
+}
+body {
+    color: white; /* Changed to white for better contrast */
+    background-color: black;
+    padding: 20px; /* Adds spacing around content */
+}
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically (if parent has height) */
+        text-align: center; /* Ensures text is centered */
+}
+img {
+    display: block;
+    align-items: 0 auto;
+    width: 150px; /* Adjust the image size */
+    height: auto;
+    max-width: 100%; /* Prevents overflow on smaller screens */
+    border-radius: 100px; /* Adds rounding for a softer look */
+}
+
+p {
+    font-size: 18px; /* Makes text more readable */
+    line-height: 1.6; /* Improves text spacing */
+}
+
+
+/* Dropdown menu styling */
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    background-color: cadetblue;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border: 1px solid cadetblue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid cadetblue;
+    color: black;
+    text-align: left;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect */
+.menu-item:hover {
+    background-color: darkcyan;
+}
+
+.dropdown li:hover {
+    background-color: lightgray;
+}
+#image {
+    display: none; /* Image is hidden initially */
+    width: 300px; /* Adjust as needed */
+  }
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }    
+  #stopAnimationBtn {
+    display: block;
+    margin: 20px auto;  /* Center the button */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(15, 156, 149);
+    color: rgb(16, 206, 212);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #stopAnimationBtn:hover {
+    background-color: rgb(11, 75, 112);
+  }
